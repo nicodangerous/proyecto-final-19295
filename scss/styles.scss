@@ -1,0 +1,158 @@
+@font-face {
+    font-family: myFont;
+    src: url(../CSS/fonts/Mytypeoffont.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$color: rgb(167, 127, 99);
+$borde: 1px solid black;
+$fuente: myFont, sans-serif;
+
+.titulo {
+    color: black;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 50px;
+    height: 50px;
+    padding-top: 70px;    
+}
+
+.titulo__subtitulo {
+    color: black;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu__navLink {
+    list-style: none;
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+    padding-right: 100px;
+
+        a {
+        font-size: 20px;
+        color: bisque;
+        
+            &:hover {
+            color: black;
+            }
+        
+        }
+}
+
+.menu__navLink:hover ul {
+    display: block;
+}
+
+.logo {
+    border: $borde;
+    border-radius: 15%;
+}
+
+.tamañoimg {
+    height: 300px;
+    border-radius: 15%;   
+}
+
+.pie__logoRedes {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+          background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.txtWelcome {
+    text-align: center;    
+}
+
+.pie {
+    display: flex;
+    background: rgb(36,16,0);
+    background: linear-gradient(275deg, rgba(36,16,0,1) 0%, rgba(121,58,9,1) 35%, rgba(128,76,37,1) 100%);
+    border-bottom: $borde;
+    border-top: $borde;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: center;
+
+    .pie__textoPie {
+        margin-right: 10px;
+        color: blanchedalmond;
+    }
+}
+
+
+#cuerpo {
+    margin-top: 30px + 20;
+}
+
+.menuBoot {
+    padding: 0;
+    background-color: $color;
+    border-bottom: $borde;
+    border-top: $borde;
+}
+
+.subMenuBoot {
+    background-color: $color;
+}
+
+.navbar-toggler {
+    color: bisque;
+}
+
+.navbar-nav {
+    justify-content: space-around;
+}
+
+.imgCarousel {
+    width: 50%;
+    margin: auto;
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.formulario__btn1 {
+    color: bisque;
+    background-color: $color;
+
+        &:hover {
+        color: black;
+    }
+}
+
+.info {
+    padding: 40px;
+}
+
+.titulo__titInfo {
+    font-family: $fuente;
+    text-align: center;
+}
+
+.fuenteProd {
+    text-decoration: none;
+    color: black;
+}

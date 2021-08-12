@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: myFont;
+  src: url(../CSS/fonts/Mytypeoffont.woff); }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.titulo {
+  color: black;
+  text-align: center;
+  font-family: myFont, sans-serif;
+  font-size: 50px;
+  height: 50px;
+  padding-top: 70px; }
+
+.titulo__subtitulo {
+  color: black;
+  text-align: center;
+  font-family: myFont, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  padding-bottom: 100px;
+  padding-top: 70px; }
+
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.menu__navLink {
+  list-style: none;
+  display: inline-block;
+  line-height: 30px;
+  position: relative;
+  padding-right: 100px; }
+  .menu__navLink a {
+    font-size: 20px;
+    color: bisque; }
+    .menu__navLink a:hover {
+      color: black; }
+
+.menu__navLink:hover ul {
+  display: block; }
+
+.logo {
+  border: 1px solid black;
+  border-radius: 15%; }
+
+.tamañoimg {
+  height: 300px;
+  border-radius: 15%; }
+
+.pie__logoRedes {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-right: 10px; }
+
+.txtWelcome {
+  text-align: center; }
+
+.pie {
+  display: flex;
+  background: #241000;
+  background: linear-gradient(275deg, #241000 0%, #793a09 35%, #804c25 100%);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center; }
+  .pie .pie__textoPie {
+    margin-right: 10px;
+    color: blanchedalmond; }
+
+#cuerpo {
+  margin-top: 50px; }
+
+.menuBoot {
+  padding: 0;
+  background-color: #a77f63;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+
+.subMenuBoot {
+  background-color: #a77f63; }
+
+.navbar-toggler {
+  color: bisque; }
+
+.navbar-nav {
+  justify-content: space-around; }
+
+.imgCarousel {
+  width: 50%;
+  margin: auto; }
+
+.navbar {
+  z-index: 100; }
+
+.formulario__btn1 {
+  color: bisque;
+  background-color: #a77f63; }
+  .formulario__btn1:hover {
+    color: black; }
+
+.info {
+  padding: 40px; }
+
+.titulo__titInfo {
+  font-family: myFont, sans-serif;
+  text-align: center; }
+
+.fuenteProd {
+  text-decoration: none;
+  color: black; }
