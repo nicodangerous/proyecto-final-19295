@@ -10,6 +10,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    display: block;
+    flex: 1 0 auto;
+}
+
+body {
+    min-height: 100%;
+  }
+
 $color: rgb(167, 127, 99);
 $borde: 1px solid black;
 $fuente: myFont, sans-serif;
@@ -71,6 +80,20 @@ body {
     border-radius: 15%;   
 }
 
+
+.contenedor-grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+.contenedor-grilla img {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+
 .pie__logoRedes {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
@@ -82,6 +105,12 @@ body {
 
 .txtWelcome {
     text-align: center;    
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .pie {
@@ -122,11 +151,6 @@ body {
 
 .navbar-nav {
     justify-content: space-around;
-}
-
-.imgCarousel {
-    width: 50%;
-    margin: auto;
 }
 
 .navbar {
