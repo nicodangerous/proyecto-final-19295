@@ -13,6 +13,9 @@ main {
   display: block;
   flex: 1 0 auto; }
 
+body {
+  min-height: 100%; }
+
 .titulo {
   color: black;
   text-align: center;
@@ -39,8 +42,7 @@ body {
   list-style: none;
   display: inline-block;
   line-height: 30px;
-  position: relative;
-  padding-right: 100px; }
+  position: relative; }
   .menu__navLink a {
     font-size: 20px;
     color: bisque; }
@@ -57,16 +59,17 @@ body {
 .tamañoimg {
   height: 300px;
   border-radius: 15%; }
-  .contenedor-grilla {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; }
-  
-  .contenedor-grilla img {
-    max-width: 100%;
-    margin: 10px; }
-  
+
+.contenedor-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; }
+
+.contenedor-grilla img {
+  max-width: 100%;
+  margin: 10px; }
+
 .pie__logoRedes {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
@@ -133,3 +136,14 @@ footer {
 .fuenteProd {
   text-decoration: none;
   color: black; }
+
+.carousel {
+  height: 83vh;
+  width: 60%;
+  margin: auto; }
+
+.carousel-img {
+  height: 83vh; }
+
+.tamanio {
+  min-height: 100vh; }
